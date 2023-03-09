@@ -10,7 +10,11 @@ public class PasarelaAuthentificacion {
         Scanner sc = new Scanner(System.in);
         GestorClientes gestorClientes = new GestorClientes();
         GestorEmpleados gestorEmpleados = new GestorEmpleados();
+        gestorEmpleados.inicializarEmpleados(gestorEmpleados);
+        gestorClientes.inicializarClientes();
+
         bool2 = false;
+        while (bool2 == false) {
         System.out.println("Tienda");
         System.out.println("======");
         System.out.println("\n\n\n");
@@ -20,7 +24,7 @@ public class PasarelaAuthentificacion {
         System.out.println("4. Salir");
         System.out.print("Seleccione una opción: ");
         sel1 = sc.nextInt();
-        while (bool2 == false) {
+        sc.nextLine();
             switch (sel1) {
                 case 1:
                     System.out.println("Iniciar sesión");
@@ -59,11 +63,11 @@ public class PasarelaAuthentificacion {
                     }
                     else {
                         bool4 = gestorEmpleados.comprobarEmpleado(user, pass);
-                        if (bool4) {
-                            bool2 = true;
+                        if (bool4 == true) {
                             System.out.println("Inicio de sesión correcto\n\n\n");
                             return gestorEmpleados.buscarEmpleado(user);
                         } else {
+                            System.out.println("empleados");
                             System.out.println("Inicio de sesión incorrecto\n\n\n");
                         }
                         break;
