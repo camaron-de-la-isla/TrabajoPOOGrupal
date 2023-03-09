@@ -29,6 +29,10 @@ public class Venta {
         return id;
     }
 
+    public String getNombre() {
+        return producto.getNombre();
+    }
+
     public String getFecha() {
         return fecha;
     }

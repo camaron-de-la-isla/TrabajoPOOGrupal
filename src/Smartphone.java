@@ -9,8 +9,9 @@ public class Smartphone extends
     private String modelo;
     private String color;
 
-    public Smartphone(int id, String nombre, double precio, int ram, int almacenamiento, String sistemaOperativo, String marca, String modelo, String color) {
-        super(id, nombre, precio);
+    public Smartphone(String nombre, double precio, int ram, int almacenamiento, String sistemaOperativo, String marca, String modelo, String color) {
+        this.nombre = nombre;
+        this.precio = precio;
         this.ram = ram;
         this.almacenamiento = almacenamiento;
         this.sistemaOperativo = sistemaOperativo;

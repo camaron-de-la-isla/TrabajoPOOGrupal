@@ -29,8 +29,8 @@ public class GestorEmpleados {
     }
 
     public void inicializarEmpleados() {
-        Empleado empleado1 = new Empleado("David", "Garcia", "12345678Z", "Calle 1", "123456789", "david@gmail.com", "Cajero", 1000.0, "pass");
-        Empleado empleado2 = new Empleado("Ana", "García", "87654321D", "Calle 2", "987654321", "anabel@gmail.com", "Cajero", 1000.0, "pass");
+        Empleado empleado1 = new Empleado("David", "Garcia", "12345678Z", "Calle 1", "123456789", "david@gmail.com", "Cajero", 1500.0, "pass", true);
+        Empleado empleado2 = new Empleado("Ana", "García", "87654321D", "Calle 2", "987654321", "anabel@gmail.com", "Cajero", 1000.0, "pass", false);
     }
 
     public boolean comprobarEmpleado(String dni, String contraseña) {

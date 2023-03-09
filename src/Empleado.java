@@ -11,7 +11,7 @@ public class Empleado {
     String contraseña;
     boolean privilegios;
 
-    public Empleado(String nombre, String apellidos, String dni, String direccion, String telefono, String email, String puesto, double salario, String contraseña) {
+    public Empleado(String nombre, String apellidos, String dni, String direccion, String telefono, String email, String puesto, double salario, String contraseña, boolean privilegios) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.dni = dni;

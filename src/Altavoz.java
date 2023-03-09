@@ -4,9 +4,9 @@ public class Altavoz extends Producto{
     String marca;
     String modelo;
     String color;
-    double precio;
-
-    public Altavoz(int potencia, String marca, String modelo, String color, double precio, int id, String nombre, double precio2) {
+    public Altavoz(String nombre, double precio, int potencia, String marca, String modelo, String color) {
+        this.nombre = nombre;
+        this.precio = precio;
         this.potencia = potencia;
         this.marca = marca;
         this.modelo = modelo;
@@ -15,6 +15,7 @@ public class Altavoz extends Producto{
     }
 
     public Altavoz() {
+        this.nombre = "";
         this.potencia = 0;
         this.marca = "";
         this.modelo = "";
@@ -40,6 +41,12 @@ public class Altavoz extends Producto{
 
     public double getPrecio() {
         return precio;
+    }
+
+    public String getNombre() {return nombre; }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public void setPotencia(int potencia) {

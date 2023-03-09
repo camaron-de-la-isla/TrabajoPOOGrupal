@@ -6,7 +6,7 @@ public class Televisor extends Producto{
     String color;
     double precio;
 
-    public Televisor(int pulgadas, String marca, String modelo, String color, double precio, int id, String nombre, double precio2) {
+    public Televisor(String nombre, double precio, int pulgadas, String marca, String modelo, String color) {
         this.pulgadas = pulgadas;
         this.marca = marca;
         this.modelo = modelo;
